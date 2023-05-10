@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Boolzapp</title>
+</head>
+<body>
+
+    <!--layout principale Whatsapp -->
+
+    <div id="app" class="container">
+        <div class="container-left">
+            <div class="profile-list">
+                
+            </div>
+            <div class="notification">
+                
+
+            </div>
+            <div class="allChat">
+                <ul>
+                    <li style="list-style-type: none;" v-for="contact in contacts">
+                      {{ contact.avatar }}
+                      {{ contact.name }}
+                      {{ contact.messages.date }}
+                      
+                    </li>
+                </ul>
+                
+
+            </div>
+        </div>
+        <div class="container-right">
+            <div class="profile-info">
+                
+            </div>
+            <div class="chat">
+                a
+            </div>
+        </div>
+        
+    </div>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="script.js"></script>
+</body>
+</html>
