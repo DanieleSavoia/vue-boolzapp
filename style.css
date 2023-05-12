@@ -30,8 +30,8 @@ html {
 	height: 100vh;
 	background-image: linear-gradient(
 		to bottom,
-		var(--color-primary) 15%,
-		var(--color-secondary) 15%
+		var(--color-primary) 14%,
+		var(--color-secondary) 14%
 	);
 }
 
@@ -50,6 +50,7 @@ html {
 	height: 85%;
 	width: 95%;
 	max-width: 950px;
+	
 }
 
 .side {
@@ -111,7 +112,6 @@ html {
 	align-items: center;
 	gap: .5rem;
 	background-color: var(--bg-heading);
-    
 }
 
 
@@ -186,6 +186,15 @@ html {
 	border-top: 1px solid #ddd;
 }
 
+.side .contacts .contact.active {
+	background-color: #888;
+}
+
+.side .contacts .contact:hover {
+	background-color: #B1B1B1;
+	cursor: pointer;
+}
+
 .side .contacts .avatar {
 	height: 100%;
 	border-radius: 9em;
@@ -233,4 +242,48 @@ html {
 .main .contact .last-access {
 	font-size: .8rem;
 	color: var(--color-text-secondary);
+}
+
+
+
+/* messages section */
+
+.main .messages .message {
+	max-width: 60%;
+	border-radius: 5px;
+}
+
+.main .messages .text {
+	padding: 1.2em;
+	padding-bottom: 0;
+}
+
+.main .messages .sent {
+	align-self: flex-end;
+	background-color: var(--bg-sent);
+}
+
+.main .messages .received {
+	align-self: flex-start;
+	background-color: var(--bg-received);
+}
+
+.main .messages .date {
+	text-align: end;
+	padding: .5em;
+	color: var(--color-text-ternary);
+	font-size: .7rem;
+}
+
+
+
+/* add new message section */
+
+.main .add-message .message-text {
+	flex: 1 0 0;
+	min-width: 0;
+	padding: 1rem;
+	background-color: var(--bg-general);
+	border: 1px solid #ddd;
+	border-radius: 5px;
 }
